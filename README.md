@@ -10,7 +10,7 @@
 
 ```sh
 cd docker
-docker-compose up -d
+docker-compose up -d --build
 ```
 ### 2. Start an Interactive Terminal with psql
 ```sh
@@ -19,7 +19,7 @@ docker exec -it pokemon-db psql -U admin -d pokemon
 
 ### 3. Query the database
 ```sql
-SELECT * from pokemon WHERE type='grass';
+SELECT * from pokemon WHERE type1='grass';
 ```
 **Note:** Don't forget the `;`
 
@@ -32,5 +32,6 @@ SELECT * from pokemon WHERE type='grass';
 ```sh
 docker-compose down -v
 ```
+To persist the data, don't call with -v
 
 Now you're set up to manage and query your Pokémon database! 🚀

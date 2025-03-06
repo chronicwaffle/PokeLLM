@@ -1,0 +1,4 @@
+# Core Python packages
+requests                 # For API requests (PokéAPI)
+pandas                   # For data transformation
+psycopg2-binary          # PostgreSQL database connection
